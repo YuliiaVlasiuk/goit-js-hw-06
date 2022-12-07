@@ -1,0 +1,82 @@
+.hero {
+
+    background-color: var(--footer-hero-color);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    // background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-sm-@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    height: 400px;
+    padding: 118px 0;
+    // max-width: 480px;
+
+
+    @media screen and (max-width:480px) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-sm-@1x.jpg);
+        height: 400px;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-sm-@2x.jpg);
+        }
+    }
+
+
+    @media screen and (min-width:481px) {
+        max-width: 768px;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-md-@1x.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-md-@2x.jpg);
+        }
+    }
+
+
+    @media screen and (min-width:769px) {
+        max-width: 1600px;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-lg-@1x.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-lg-@2x.jpg);
+        }
+
+    }
+
+    @media screen and (min-width:1200px) {
+        height: 600px;
+        padding: 200px;
+
+    }
+
+}
+
+.hero__title {
+    color: var(--white-color);
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    // width: 696px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 360px;
+
+    @media screen and (max-width:430px) {
+        font-size: 16px;
+    }
+
+    @media screen and (min-width:1200px) {
+        font-size: 44px;
+        width: 696px;
+    }
+}
