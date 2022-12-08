@@ -22,3 +22,9 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+.image{
+  display: block;
+  max-width: 500px;
+  margin-bottom: 10px;
+}
