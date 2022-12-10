@@ -23,7 +23,7 @@ function onCreate(evt) {
 		div.style.width = `${divWidth}px`;
 		div.style.height = `${divHeight}px`;
 		div.style.backgroundColor = getRandomHexColor();
-		div.textContent = i;
+		div.textContent = i; 
 		divWidth += step;
 		divHeight += step;
 		elements.push(div);
