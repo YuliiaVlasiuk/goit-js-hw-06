@@ -13,8 +13,9 @@ create.addEventListener("click", onCreate);
 destroy.addEventListener("click", onDestroy);
 
 function onCreate(evt) {
-	let divWidth = 30;
-	let divHeight = 30;
+ mainDiv.innerHTML =[]
+  let divWidth = 30;
+  let divHeight = 30;
 
 	const counerAddDiv = counter.value;
 	const elements = [];
